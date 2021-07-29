@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript</title>
+  </head>
+
+  <body>
+    
+    <p id="text1">Hello World!</p>
+
+    <button id="btn1">Click me</button>
+
+    <p id="text2"> Javascript je </p>
+
+    <button id="btn2">Click me too</button>
+
+    <p id="text3">This is some text</p>
+
+    <button id="btn3_color">Change colour</button>
+
+    <script type="text/javascript">
+
+      document.getElementById("btn1").onclick = function() {
+
+        document.getElementById("text1").innerHTML = "pozdrav svijete"
+        alert("button 1 clicked")
+      }
+
+      document.getElementById("btn2").onclick = function() {
+
+        document.getElementById("text2").innerHTML = document.getElementById("text2").innerHTML  + "kul"
+        alert("button 2 clicked")
+      }
+
+      document.getElementById("btn3_color").onclick = function() {
+        document.getElementById("text3").style.color = "red"
+      }
+    </script>
+  </body>
+
+</html>
